@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+   "version": "0.1.0",
+    "command": "firefox",    //使用firefox浏览器
+    "windows": {
+        "command": "D:/firefox/firefox.exe" //firefox浏览器的路径
+    },
+    "isShellCommand": true,
+    "args": ["${file}"],    //表示对当前文件进行操作
+    "showOutput": "always"
+
+}
