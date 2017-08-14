@@ -1,1 +1,5 @@
 此效果是图文环绕效果
+ 
+详细的开发流程请看：
+http://www.cnblogs.com/sulishibaobei/p/7356852.html
+ 
