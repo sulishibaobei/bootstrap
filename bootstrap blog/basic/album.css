@@ -38,7 +38,10 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+
+ 
 }
+
 .myCarousel{
    width:22.25rem; /* 356除以16*/
   height: 17.5rem;
@@ -47,7 +50,36 @@ img {
   margin-bottom: .75rem;
   width:22.25rem; /* 356除以16*/
   height: 17.5rem;
+ 
 }
+ @media screen and (max-width: 992px) {
+  .test1{
+    width: 70%  !important ;
+    height: 100% !important;
+  }
+}
+ @media screen and (max-width: 1200px) {
+  .test1{
+    width: 90%  !important ;
+    height: 100% !important;
+  }
+}
+ @media screen and (max-width: 768px) {
+  .test1{
+    width: 50%  !important ;
+    height: 100% !important;
+  }
+}
+ @media screen and (max-width: 500px) {
+  .test1{
+    width: 30%  !important ;
+    height: 90% !important;
+  }
+  
+  
+}
+ 
+
 
 .carousel-item {
   height: 17.5rem;
