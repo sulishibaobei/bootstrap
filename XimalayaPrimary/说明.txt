@@ -1,0 +1,1 @@
+/**此版本为自己编写的纯js，和angularjs 和 typescript是没有关系的**/

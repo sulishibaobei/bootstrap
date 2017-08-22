@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ximalaya.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="crypto-js/crypto-js.js"></script>
+    <script type="text/javascript" src="crypto-js/core.js"></script>
+    <script type="text/javascript" src="crypto-js/md5.js"></script>
+    <script type="text/javascript" src="crypto-js/enc-base64.js"></script>
+    <script type="text/javascript" src="crypto-js/hmac-sha1.js"></script>
+    <script type="text/javascript" src="crypto-js/hmac.js"></script>
+    <script type="text/javascript" src="crypto-js/sha1.js"></script>
+     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"/></script>
+  
+    <title>Document</title>
+</head>
+<body >
+    
+    <div class="container">
+     <div class="first">
+       <a class="title" >喜马拉雅FM</a>
+       <div class="main">
+            <a class="item-tit"> 发现</a>
+       </div>
+     </div>
+<div class="sub-header">
+        <ul class="sub">
+            <li>
+                <a class="sub1"  onclick="changeFace('big')">热门推荐</a>
+            </li>
+            <li>
+                <a class="sub2" onclick="changeFace('bigOne')" >节目分类</a>
+            </li>
+            <li>
+                <a class="sub3">声音广场</a>
+            </li>
+            <li>
+                <a class="sub4">人气主播</a>
+            </li>
+        </ul>
+</div>
+<div class="second" id="big" style="display: block">
+    <div class="second-left">
+  <img src="images/1.jpg" id="showPic">
+  <div id="scroll_number" class="second-left-right">
+      <a href=""><span class="leftSpan" ></span><div class="border"></div> <img  src="images/1.jpg" class="showSmallPic" onmouseover="show(1)" onmouseout="start()"></a>
+      <a href=""><span class="leftSpan" ></span><div class="border"></div> <img  src="images/2.jpg" class="showSmallPic" onmouseover="show(2)" onmouseout="start()"></a>
+      <a href=""><span class="leftSpan" ></span><div class="border"></div>  <img  src="images/3.jpg" class="showSmallPic" onmouseover="show(3)" onmouseout="start()"></a>
+      <a href=""><span class="leftSpan" ></span><div class="border"></div> <img  src="images/4.jpg" class="showSmallPic" onmouseover="show(4)" onmouseout="start()"></a>
+      <span class="leftSpan" ></span><div class="border"></div> <img  src="images/5.jpg" class="showSmallPic" onmouseover="show(5)" onmouseout="start()"> </a>
+  </div>
+
+ <div class="last">
+        <canvas id="canvas" class="canvas"></canvas>
+        <audio id="audio" autoplay src="Kalimba.mp3"></audio>
+      <div class="lastTwo" id="lastTwo">
+          <video src="Kalimba.mp3" controls="controls" style="margin-top: -100px ; margin-left: 100px; z-index:1" ></video>
+      </div>
+ </div>
+</div>
+    <div class="second-right">
+        <h3 style="position: absolute;padding-left:30px;margin-top: 0px;">
+        <img src="images/re.png" >
+        <a>热门分类</a>
+        <hr width="330px"/>
+        </h3>
+
+        <div class="remen" id="remen">
+            <div class="rmdt" id="rmdt">
+
+            </div>
+            <div id="demo2"></div>
+        </div>
+
+    </div>
+    <div class="third" id="third">
+        <h3 style="padding-left: 20px"><img src="images/tuijian.png">
+            小编推荐
+            <span  id="facea"  style="float: right;color: cornflowerblue;text-decoration: underline;font-size: 16px;padding-right: 80px;cursor: pointer;" onclick="changeFace('bigOne')">全部</span>
+        </h3>
+    </div>
+    <div class="third-right" id="zixunbox">
+        <h3 style="position: relative;padding-left:20px;margin-top:10px;">
+            <a>资讯</a>
+            <hr width="350px"/>
+        </h3>
+</div>
+
+<div id="bigOne" class="bigOne" style="display: none">
+        <div class="hello" id="hello">
+           <img src="images/hello.png" style="color: transparent; margin-top: 10px">
+            <a class="color">经典</a>
+            <a  class="color">最新更新</a>
+            <a class="color" style="background: #FF6800;color: white;font-size:16px;border: 1px solid #FF6800;border-radius: 10%">最火</a>
+        </div>
+        <div id="fendiv" class="fendiv">
+            <ul id="fenul" class="fenul">
+            </ul>
+            <div class="tag" id="tag" style="display: none">
+            </div>
+        </div><br><br>
+     
+</div>
+   </div>
+<script src="js/ximalaya.js"></script>
+</body>
+</html>
